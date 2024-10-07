@@ -1,50 +1,53 @@
 <style>
-table{
-border-collapse:collapse,
-}
 
-table , th ,td{
-border:1px, solid black;
-}
-th,td{
-padding:15px;
-}
-th{
-background-color:lightgreen;
-}
-tr{
-background-color:#FEFF9F;
-
-}
+    table{
+    	border-collapse: collapse;
+        box-shadow: 2px 2px 7px black;
+      
+    }
+	table, th, td {
+    	border: 1px solid black;
+    }
+    
+    th, td {
+    	padding: 15px;
+    }
+	th{
+    	background-image: radial-gradient( lightblue, blue);
+        
+    }
+    
+    tr:nth-child(odd){
+    	background:lightgray;
+    }
 </style>
+
+
 <table>
+	<caption>This is table title.</caption>
+	<tr>
+    	<th>Heading 1</th>
+        <th>Heading 2</th>
+        <th>Heading 3</th>     
+    </tr>
+    
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+    </tr>
+    
+     <tr>
+      <td>Data Cell 4</td>
+      <td rowspan="3" colspan="2" style="text-align:center">Data Cell 5</td>
+    </tr>
+    
+     <tr>
+      <td>Data Cell 7</td>
+    </tr>
+    
+      <tr>
+      <td>Data Cell 10</td>
+    </tr>
 
-<tr>
-<th>Name</th>
-<th>Contact</th>
-<th>Address</th>
-</tr>
-<tr>
-<td>Harsh</td>
-<td>740000567</td>
-<td>3518 48 ave </td>
-
-</tr>
-
-<tr>
-<td>Kamal</td>
-<td rowspan="2" colspan="2">100 blvd</td>
-</tr>
-
-<tr>
-<td>pankaj</td>
-
-
-</tr>
-<tr>
-<td>Rohan</td>
-<td>6548890003</td>
-<td>26 Jhonston Apaertments</td>
-
-</tr>
 </table>
